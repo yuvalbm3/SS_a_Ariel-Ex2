@@ -1,5 +1,5 @@
 CC=gcc
-AR=ar
+AR=ar -rcs
 OBJECTS_MAIN=main.o
 OBJECTS_MY_MAT=my_mat.o
 FLAGS= -Wall -g
