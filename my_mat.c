@@ -16,7 +16,7 @@ int printShortest(int dist[][V], int start, int target){
 }
 
 int floydWarshall (Matrix* dist, int start, int target){
-    int copy[V][V], i, j, k;
+    int copy[V][V], i, j;
     for (i = 0; i < V; i++)
         for (j = 0; j < V; j++) {
             copy[i][j] = dist->edge[i][j];
@@ -55,7 +55,7 @@ void printSolution(int dist[][V])
     }
 }
 
-int A(Matrix* matrix) {
+void A(Matrix* matrix) {
     for (int i = 0; i < V; i++) {
         for (int j = 0; j < V; j++) {
             scanf("%d", &matrix->edge[i][j]);
